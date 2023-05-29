@@ -901,73 +901,6 @@ header>*:nth-child(3) {
 
 }
 
-/* Styles for mobile devices with a maximum width of 600px */
-@media (max-width: 600px) {
-
-    .contact-container {
-      display: grid;
-      grid-template-columns: repeat(1,1fr);
-    }
-  
-    .icons {
-      margin-bottom: 20px;
-      height: 100px;
-      width: 80%;
-      margin: auto;
-      padding: 5px;
-    }
-  
-    .contactme-card-email,
-    .contactme-card-num,
-    .contactme-card {
-      text-align: center;
-    }
-  
-    .contactme-card-email h6 {
-      font-size: 13px;
-    }
-  
-    .contactme-card-num,
-    .contactme-card {
-      font-size: 13px;
-    }
-  
-    /* Additional styles for the form (uncommented code in the HTML) */
-    .row {
-      margin-top: 20px;
-    }
-  
-    .box {
-      width: 100%;
-      margin-bottom: 15px;
-      padding: 10px;
-      font-size: 16px;
-      box-sizing: border-box;
-    }
-  
-    textarea {
-      width: 100%;
-      margin-bottom: 15px;
-      padding: 10px;
-      font-size: 16px;
-      box-sizing: border-box;
-    }
-  
-    .common-btn {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      font-size: 16px;
-      text-align: center;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  
-  }
-  
 @media (max-width:450px) {
 
     html {
@@ -1060,4 +993,9 @@ header>*:nth-child(3) {
 
 .contactme-card:hover:after {
     content: "Github";
+}
+
+.icons{
+    /* border: 1px solid red; */
+    height: 15rem;
 }

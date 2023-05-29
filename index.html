@@ -237,7 +237,8 @@
                 <p class="project-tech-stack" style="color: black; font-weight: 300; font-size: 12px; width: 82%;">Tech
                     Stack Used - React.js & CSS</p>
                 <div class="icons">
-                    <a href="https://github.com/harshal3007/Urban-Ladder-Clone.git" target="_blank" class="fab fa-github project-github-link" id="contact-github"></a>
+                    <a href="https://github.com/harshal3007/Urban-Ladder-Clone.git" target="_blank"
+                        class="fab fa-github project-github-link" id="contact-github"></a>
                     <a href="https://furniturefrenzy.netlify.app/" target="_blank"
                         class="fas fa-link project-deployed-link"></a>
                 </div>
@@ -252,7 +253,8 @@
                 <p class="project-tech-stack" style="color: black; font-weight: 300; font-size: 12px; width: 82%;">Tech
                     Stack Used - HTML, CSS, JavaScript</p>
                 <div class="icons">
-                    <a href="https://github.com/harshal3007/Pepper-Fry-Clone.git" target="_blank" class="fab fa-github project-github-link" id="contact-github"></a>
+                    <a href="https://github.com/harshal3007/Pepper-Fry-Clone.git" target="_blank"
+                        class="fab fa-github project-github-link" id="contact-github"></a>
                     <a href="https://modern-nest-furniture.netlify.app/" target="_blank"
                         class="fas fa-link project-deployed-link"></a>
                 </div>
@@ -267,7 +269,8 @@
                 <p class="project-tech-stack" style="color: black; font-weight: 300; font-size: 12px; width: 82%;">Tech
                     Stack Used - HTML, CSS, JavaScript</p>
                 <div class="icons">
-                    <a href="https://github.com/harshal3007/Reliance-Digital-Clone.git" target="_blank" class="fab fa-github project-github-link" id="contact-github"></a>
+                    <a href="https://github.com/harshal3007/Reliance-Digital-Clone.git" target="_blank"
+                        class="fab fa-github project-github-link" id="contact-github"></a>
                     <a href="https://ele-stop-by-harshal.netlify.app/" target="_blank"
                         class="fas fa-link project-deployed-link"></a>
                 </div>
@@ -317,10 +320,8 @@
                     alt="harshal3007" /></p>
 
         </div>
-        <div class="react-activity-calendar">
-            <!-- Loading stuff -->
-            Loading the data just for you.
-        </div>
+        <div class="react-activity-calendar" style="overflow-x: auto;"><!-- Loading stuff -->
+            Loading the data just for you.</div>
     </div>
 
 
@@ -376,20 +377,13 @@
 
     <script src="script.js"></script>
 
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
-        style="margin-left: 100px;"> </script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
     <script>
-        GitHubCalendar(".react-activity-calendar", "harshal3007", { responsive: true });
-
-        // Use a proxy
-        GitHubCalendar(".react-activity-calendar", "harshal3007", {
-            proxy(username) {
-                return fetch(`https://your-proxy.com/github?user=${username}`)
-            }
-        })
-
+        // Wait for the DOM to load
+        document.addEventListener("DOMContentLoaded", function () {
+            GitHubCalendar(".react-activity-calendar", "harshal3007", { responsive: true });
+        });
     </script>
-
 </body>
 
 </html>
