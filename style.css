@@ -3,16 +3,17 @@
 :root {
   --header-height: 3rem;
   --hue-color: 0;
-  --first-color: #8fb4ff;
-  --first-color-alt: rgb(21, 142, 207);
-  --first-color-lighter: #d1e7fc;
-  --text-color: #000000;
-  --text-color-light: #afc9fc;
-  --input-color: #8fb4ff;
-  --body-color: #fcfbfb;
   --container-color: #fff;
-  --scroll-bar-color: #8fb4ff;
-  --scroll-thumb-color: #d0e1fa;
+
+  --first-color: #d8b4fe;
+  --first-color-alt: #ffb4a2;
+  --first-color-lighter: #f9efff;
+  --text-color: #2d2d2d;
+  --text-color-light: #e6cef9;
+  --input-color: #d8b4fe;
+  --body-color: #fffafa;
+  --scroll-bar-color: #e9d8fb;
+  --scroll-thumb-color: #d8b4fe;
 
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
@@ -40,6 +41,16 @@
   --z-modal: 1000;
 }
 
+/* ========== Variable dark theme ========== */
+body.dark-theme {
+  --text-color: #fbefff;
+  --input-color: #d8b4fe;
+  --body-color: #241a2e;
+  --container-color: #3b2c4a;
+  --scroll-bar-color: #6b4e84;
+  --scroll-thumb-color: #d8b4fe;
+}
+
 /* ========== Font size for large devices ========== */
 @media screen and (min-width: 968px) {
   :root {
@@ -51,17 +62,6 @@
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
   }
-}
-
-/* ========== Variable dark theme ========== */
-body.dark-theme {
-  /* HSL color mode*/
-  --text-color: #ffffff;
-  --input-color: #8fb4ff;
-  --body-color: #000000;
-  --container-color: #fff;
-  --scroll-bar-color: rgb(34, 62, 118);
-  --scroll-thumb-color: #8fb4ff;
 }
 
 /* ========== Button Dark/Light ========== */
